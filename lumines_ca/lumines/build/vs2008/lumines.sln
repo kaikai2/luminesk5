@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lumines", "lumines.vcproj", "{BFF4DBF7-B492-8141-AF69-23E9FB5FC7F9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8BF9EFC2-2118-ED4B-B336-DE107A5C87E9} = {8BF9EFC2-2118-ED4B-B336-DE107A5C87E9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curvedani", "..\..\..\curvedani\build\vs2008\curvedani.vcproj", "{BE318E2B-1528-D240-AD45-E7953D5AB9D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glport", "..\..\..\glport\build\vs2008\glport.vcproj", "{8BF9EFC2-2118-ED4B-B336-DE107A5C87E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BE318E2B-1528-D240-AD45-E7953D5AB9D8} = {BE318E2B-1528-D240-AD45-E7953D5AB9D8}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFF4DBF7-B492-8141-AF69-23E9FB5FC7F9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BFF4DBF7-B492-8141-AF69-23E9FB5FC7F9}.Debug|Win32.Build.0 = Debug|Win32
+		{BFF4DBF7-B492-8141-AF69-23E9FB5FC7F9}.Release|Win32.ActiveCfg = Release|Win32
+		{BFF4DBF7-B492-8141-AF69-23E9FB5FC7F9}.Release|Win32.Build.0 = Release|Win32
+		{BE318E2B-1528-D240-AD45-E7953D5AB9D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BE318E2B-1528-D240-AD45-E7953D5AB9D8}.Debug|Win32.Build.0 = Debug|Win32
+		{BE318E2B-1528-D240-AD45-E7953D5AB9D8}.Release|Win32.ActiveCfg = Release|Win32
+		{BE318E2B-1528-D240-AD45-E7953D5AB9D8}.Release|Win32.Build.0 = Release|Win32
+		{8BF9EFC2-2118-ED4B-B336-DE107A5C87E9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8BF9EFC2-2118-ED4B-B336-DE107A5C87E9}.Debug|Win32.Build.0 = Debug|Win32
+		{8BF9EFC2-2118-ED4B-B336-DE107A5C87E9}.Release|Win32.ActiveCfg = Release|Win32
+		{8BF9EFC2-2118-ED4B-B336-DE107A5C87E9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

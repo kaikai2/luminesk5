@@ -1,0 +1,34 @@
+<CurvedAni renderer="gl" length="20" numDataSets="5" numAnimElements="2">
+	<!-- Î»ÖÃ -->
+	<DataSet name="image" type="Image" numData="1">
+		<Data time="0" value="skins/block.png;26,76,64,114"/>
+	</DataSet>
+	<DataSet name="theScale" type="Float2" numData="3">
+		<Data time="0" value="1,1"/>
+		<Data time="15" value="2,2"/>
+		<Data time="20" value="2.5,2.5"/>
+	</DataSet>
+	<DataSet name="theScaleBig" type="Float2" numData="2">
+		<Data time="0" value="2,2"/>
+		<Data time="20" value="1.5,1.5"/>
+	</DataSet>
+	<DataSet name="theAlpha" type="Float" numData="2">
+		<Data time="0" value="1"/>
+		<Data time="20" value="0"/>
+	</DataSet>
+	<DataSet name="theAlpha010" type="Float" numData="3">
+		<Data time="0" value="0"/>
+		<Data time="10" value=".6"/>
+		<Data time="20" value="0"/>
+	</DataSet>
+	<AnimElement numLocus="3">
+		<Locus StateId="Image" DataSet="image" InterpolaterId="Step"/>
+		<Locus StateId="Scale" DataSet="theScale" InterpolaterId="Linear"/>
+		<Locus StateId="Alpha" DataSet="theAlpha" InterpolaterId="Linear"/>
+	</AnimElement>
+	<AnimElement numLocus="3">
+		<Locus StateId="Image" DataSet="image" InterpolaterId="Step"/>
+		<Locus StateId="Scale" DataSet="theScaleBig" InterpolaterId="Linear"/>
+		<Locus StateId="Alpha" DataSet="theAlpha010" InterpolaterId="Linear"/>
+	</AnimElement>
+</CurvedAni>

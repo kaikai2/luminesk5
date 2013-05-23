@@ -1,0 +1,18 @@
+<CurvedAni renderer="gl" length="40" numDataSets="2" numAnimElements="1">
+	<!-- 位置 -->
+	<DataSet name="thePos" type="Float2" numData="4">
+		<Data time="0" value="-50,100"/>
+		<Data time="12" value="200,100"/>
+		<Data time="28" value="250,100"/>
+		<Data time="40" value="300,100"/>
+	</DataSet>
+  <!-- 缩放 -->
+  <DataSet name="theScale" type="Float2" numData="1">
+      <Data time="0" value="20,20"/>
+  </DataSet>
+	<AnimElement numLocus="2">
+		<!-- <Locus StateId="Text" DataSet="title" InterpolaterId="Step"/> -->
+    <Locus StateId="Scale" DataSet="theScale" InterpolaterId="Step"/>
+		<Locus StateId="Position" DataSet="thePos" InterpolaterId="Bspline"/>
+	</AnimElement>
+</CurvedAni>

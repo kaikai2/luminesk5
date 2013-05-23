@@ -1,0 +1,15 @@
+<CurvedAni renderer="gl" length="20" numDataSets="2" numAnimElements="1">
+	<!-- Î»ÖÃ -->
+	<DataSet name="theScale" type="Float2" numData="2">
+		<Data time="0" value="2,2"/>
+		<Data time="20" value="2.5,2.5"/>
+	</DataSet>
+	<DataSet name="theAlpha" type="Float2" numData="2">
+		<Data time="0" value="1,1"/>
+		<Data time="20" value="0,1"/>
+	</DataSet>
+	<AnimElement numLocus="2">
+		<Locus StateId="Scale" DataSet="theScale" InterpolaterId="Linear"/>
+		<Locus StateId="Alpha" DataSet="theAlpha" InterpolaterId="Linear"/>
+	</AnimElement>
+</CurvedAni>

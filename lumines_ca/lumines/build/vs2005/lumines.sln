@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lumines", "lumines.vcproj", "{9B504889-10C0-9346-BCC6-6356F24709FE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26660C27-1473-C54D-8F93-F26FCEE39F3B} = {26660C27-1473-C54D-8F93-F26FCEE39F3B}
+		{FB5290E9-067A-7C4E-8C64-14660DEE6D54} = {FB5290E9-067A-7C4E-8C64-14660DEE6D54}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "curvedani", "..\..\..\curvedani\build\vs2005\curvedani.vcproj", "{26660C27-1473-C54D-8F93-F26FCEE39F3B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glport", "..\..\..\glport\build\vs2005\glport.vcproj", "{FB5290E9-067A-7C4E-8C64-14660DEE6D54}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26660C27-1473-C54D-8F93-F26FCEE39F3B} = {26660C27-1473-C54D-8F93-F26FCEE39F3B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B504889-10C0-9346-BCC6-6356F24709FE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9B504889-10C0-9346-BCC6-6356F24709FE}.Debug|Win32.Build.0 = Debug|Win32
+		{9B504889-10C0-9346-BCC6-6356F24709FE}.Release|Win32.ActiveCfg = Release|Win32
+		{9B504889-10C0-9346-BCC6-6356F24709FE}.Release|Win32.Build.0 = Release|Win32
+		{26660C27-1473-C54D-8F93-F26FCEE39F3B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{26660C27-1473-C54D-8F93-F26FCEE39F3B}.Debug|Win32.Build.0 = Debug|Win32
+		{26660C27-1473-C54D-8F93-F26FCEE39F3B}.Release|Win32.ActiveCfg = Release|Win32
+		{26660C27-1473-C54D-8F93-F26FCEE39F3B}.Release|Win32.Build.0 = Release|Win32
+		{FB5290E9-067A-7C4E-8C64-14660DEE6D54}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FB5290E9-067A-7C4E-8C64-14660DEE6D54}.Debug|Win32.Build.0 = Debug|Win32
+		{FB5290E9-067A-7C4E-8C64-14660DEE6D54}.Release|Win32.ActiveCfg = Release|Win32
+		{FB5290E9-067A-7C4E-8C64-14660DEE6D54}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

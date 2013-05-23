@@ -1,0 +1,9 @@
+<CurvedAni renderer="gl" length="0" numDataSets="1" numAnimElements="1">
+	<!-- 位置 -->
+	<DataSet name="image" type="Image" numData="1">
+		<Data time="0" value="skins/level1/block.png;0,72,18,90"/>
+	</DataSet>
+	<AnimElement numLocus="1">
+		<Locus StateId="Image" DataSet="image" InterpolaterId="Step"/>
+	</AnimElement>
+</CurvedAni>

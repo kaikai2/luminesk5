@@ -1,0 +1,48 @@
+<CurvedAni renderer="gl" length="100" numDataSets="7" numAnimElements="2">
+  <!-- Star -->
+  <DataSet name="imageStar" type="Image" numData="1">
+    <Data time="0" value="skins/marble/marble.png;0,108,18,126"/>
+  </DataSet>
+  <DataSet name="posStar" type="Float2" numData="5">
+    <Data time="20" value="-19,-19"/>
+    <Data time="40" value="19,-19"/>
+    <Data time="60" value="19,19"/>
+    <Data time="80" value="-19,19"/>
+    <Data time="100" value="-19,-19"/>
+  </DataSet>
+  <DataSet name="alphaStar" type="Float" numData="4">
+    <Data time="20" value="0"/>
+    <Data time="25" value="1"/>
+    <Data time="95" value="1"/>
+    <Data time="100" value="0"/>
+  </DataSet>
+  <DataSet name="rotStar" type="Float" numData="2">
+    <Data time="20" value="0"/>
+    <Data time="80" value="3"/>
+  </DataSet>
+  <!-- Frame -->
+  <DataSet name="image" type="Image" numData="1">
+    <Data time="0" value="skins/marble/marble.png;26,0,64,38"/>
+  </DataSet>
+  <DataSet name="scaleFrame" type="Float2" numData="3">
+    <Data time="0" value="2.3,2.3"/>
+    <Data time="20" value="1,1"/>
+    <Data time="100" value="1,1"/>
+  </DataSet>
+  <DataSet name="alphaFrame" type="Float" numData="3">
+    <Data time="0" value="0"/>
+    <Data time="20" value="0.5"/>
+    <Data time="100" value="1"/>
+  </DataSet>
+  <AnimElement numLocus="3">
+    <Locus StateId="Image" DataSet="image" InterpolaterId="Step"/>
+    <Locus StateId="Scale" DataSet="scaleFrame" InterpolaterId="Linear"/>
+    <Locus StateId="Alpha" DataSet="alphaFrame" InterpolaterId="Linear"/>
+  </AnimElement>
+  <AnimElement numLocus="4">
+    <Locus StateId="Image" DataSet="imageStar" InterpolaterId="Step"/>
+    <Locus StateId="Position" DataSet="posStar" InterpolaterId="Linear"/>
+    <Locus StateId="Alpha" DataSet="alphaStar" InterpolaterId="Linear"/>
+    <Locus StateId="Angle" DataSet="rotStar" InterpolaterId="Linear"/>
+  </AnimElement>
+</CurvedAni>

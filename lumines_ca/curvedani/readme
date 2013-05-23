@@ -1,0 +1,10 @@
+Curved Ani is a flexible data driven animation rendering logic. It could be
+used by implement the necessary interfaces in your rendering engine, no matter
+it is 2d or 3d.
+
+It provides an unified pattern to process different kind of animation's data.
+
+
+
+2007-7-8
+author: Zikai ZHANG

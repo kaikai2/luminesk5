@@ -1,0 +1,43 @@
+编译spdtank之前需要先下载个Premake. 当然你可以不用premake自己手工建立工程,设置麻烦的编译连接参数~
+http://premake.sourceforge.net/download
+
+. 什么是Premake?
+Premake是一个编译脚本生成器. 用lua脚本语言描述你的工程,然后让Premake生成工程文件. 
+
+目前支持的编译环境包括:
+MS Visual Studio 6, 2002, 2003, or 2005 
+GNU make (including Cygwin and MinGW) 
+IC#Code SharpDevelop 
+MonoDevelop 
+Code::Blocks
+...
+
+. 怎么用?
+/build下, 你肯定已经看到了一个写好的脚本premake.lua, 进入命令行输入:
+premake --target toolset --os windows
+
+toolset可以是下列名字:
+vs2005	(Visual Studio 2005 or Express )
+vs2003	(Visual Studio 2003 )
+vs2002	(Visual Studio 2002 )
+vs6	(Visual Studio 6 )
+gnu	(GNU make )
+sharpdev	(SharpDevelop) 
+monodev	(MonoDevelop )
+cb-gcc	(Code::Blocks with GCC )
+
+然后就出现一个toolset文件夹,里面就是工程文件了.
+
+例如:
+premake --target vs6 --os windows
+premake --target vs2003 --os windows
+premake --target vs2005 --os windows
+premake --target gnu --os windows
+
+在windows下推荐建一个.bat脚本运行上面的命令.
+
+. 目前存在的问题?
+premake3.3不支持vs2003的/ML和/MLd运行时库选项,所以生成的vs2003连接库为/MDd,编译后会警告libc与其它库的使用冲突. 也许vs其他系列也都是这样.
+
+gamcat@gmail.com
+16:11 2007-6-19

@@ -1,0 +1,9 @@
+<CurvedAni renderer="gl" length="0" numDataSets="1" numAnimElements="1">
+	<-- Î»ÖÃ -->
+	<DataSet name="image" type="Image" numData="1">
+		<Data time="0" value="skins/block.png;1,1,17,17"/>
+	</DataSet>
+	<AnimElement numLocus="1">
+		<Locus StateId="Image" DataSet="image" InterpolaterId="Step"/>
+	</AnimElement>
+</CurvedAni>

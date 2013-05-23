@@ -1,0 +1,46 @@
+<CurvedAni renderer="gl" length="2200">
+	<!-- 背景 -->
+	<DataSet name="bg" type="Image">
+		<Data time="0" value="air_speed_background.png;0,0,512,512"/>
+	</DataSet>
+	<DataSet name="bgPos" type="Float2">
+		<Data time="0" value="0,-50"/>
+	</DataSet>
+	<!-- 指针 -->
+	<DataSet name="neddle" type="Image">
+		<Data time="0" value="neddle.png;0,0,32,256"/>
+	</DataSet>
+	<!-- 指针旋转中心偏移 -->
+	<DataSet name="neddleAnchorOffPos" type="Float2">
+		<Data time="0" value="0,44"/>
+	</DataSet>
+	<!-- 指针中心偏移 -->
+	<DataSet name="neddlePos" type="Float2">
+		<Data time="0" value="10,10"/>
+	</DataSet>
+	<!-- 指针旋转 -->
+	<DataSet name="neddleRotate" type="Float">
+		<Data time="0" value="0"/>
+		<Data time="200" value="-0.157"/>
+		<Data time="400" value="-0.953"/>
+		<Data time="600" value="-1.772"/>
+		<Data time="800" value="-2.506"/>
+		<Data time="1000" value="-3.117"/>
+		<Data time="1200" value="-3.649"/>
+		<Data time="1400" value="-4.150"/>
+		<Data time="1600" value="-4.578"/>
+		<Data time="1800" value="-4.974"/>
+		<Data time="2000" value="-5.353"/>
+		<Data time="2200" value="-5.760"/>
+	</DataSet>
+	<AnimElement>
+		<Locus StateId="Image" DataSet="bg" InterpolaterId="Step"/>
+	<!--	<Locus StateId="Position" DataSet="bgPos" InterpolaterId="Step"/> -->
+	</AnimElement>
+	<AnimElement>
+		<Locus StateId="Image" DataSet="neddle" InterpolaterId="Step"/>
+		<Locus StateId="Angle" DataSet="neddleRotate" InterpolaterId="Linear"/> <-- 旋转 -->
+		<Locus StateId="Position" DataSet="neddlePos" InterpolaterId="Step"/> <-- 中心偏移 -->
+		<Locus StateId="AnchorOffPos" DataSet="neddleAnchorOffPos" InterpolaterId="Step"/> <-- 中心偏移 -->
+	</AnimElement>
+</CurvedAni>
